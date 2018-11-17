@@ -10,5 +10,6 @@ jobs:
 
 workflows:
   version: 2
-  jobs:
-    - something
+  myworkflow:
+    jobs:
+      - something
