@@ -1,0 +1,14 @@
+version: 2
+jobs:
+  something:
+    docker:
+      - image: alpine:latest
+    steps:
+      - checkout
+    
+      - run: echo "hello world"
+
+workflows:
+  version: 2
+  jobs:
+    - something
